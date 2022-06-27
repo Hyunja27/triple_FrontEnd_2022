@@ -1,10 +1,10 @@
 import Animation from '../container/Animation'
-import Image from '../container/Image'
+import MyImage from '../container/MyImage'
 
 export default function MainPage() {
   return (
     <div>
-      <Image />
+      <MyImage />
       <Animation />
     </div>
   )
