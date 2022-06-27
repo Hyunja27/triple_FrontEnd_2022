@@ -3,7 +3,7 @@ import { styled } from '../theme/theme'
 
 const LogoContainer = styled('div', {
   left: '20%',
-  top: '20%',
+  top: '20px',
   position: 'absolute',
 })
 
