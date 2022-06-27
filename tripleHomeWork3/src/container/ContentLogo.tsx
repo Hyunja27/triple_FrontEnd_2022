@@ -1,13 +1,32 @@
 import triple2x from '../img/triple2x.png'
 import { styled } from '../theme/theme'
 
-const ImageContainer = styled('img', {
-  height: '50%',
+const LogoContainer = styled('div', {
+  left: '20%',
+  top: '20%',
   position: 'absolute',
+})
+
+const ImageContainer = styled('img', {
+  width: '400px',
+  height: '338px',
+})
+
+const ImageText = styled('p', {
+  bottom: '15%',
+  position: 'absolute',
+  left: '50%',
+  transform: 'translateX(-50%)',
 })
 
 export default function Awards() {
   return (
-    <ImageContainer src={triple2x} alt="the poor From Egypt with blue guitar" />
+    <LogoContainer>
+      <ImageContainer
+        src={triple2x}
+        alt="the poor From Egypt with blue guitar"
+      />
+      <ImageText>2021년 12월 기준</ImageText>
+    </LogoContainer>
   )
 }

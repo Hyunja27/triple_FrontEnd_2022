@@ -5,31 +5,17 @@ import ContentLogo from './ContentLogo'
 import Matrics from './Matrics'
 
 const AnimationContainer = styled('div', {
-  height: '70vh',
+  height: '60vh',
   position: 'relative',
-  display: 'flex',
-})
-
-const LogoContainer = styled('div', {
-  width: '50%',
-  border: 'solid 2px red',
-})
-
-const InfoContainer = styled('div', {
-  width: '50%',
-  border: 'solid 2px red',
+  textAlign: 'center',
 })
 
 export default function Animation() {
   return (
     <AnimationContainer>
-      <LogoContainer>
-        <ContentLogo />
-      </LogoContainer>
-      <InfoContainer>
-        <Matrics />
-        <Awards />
-      </InfoContainer>
+      <ContentLogo />
+      <Matrics />
+      <Awards />
     </AnimationContainer>
   )
 }
