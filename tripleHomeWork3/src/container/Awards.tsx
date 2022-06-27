@@ -4,17 +4,10 @@ import Badge from './Badge'
 
 const AwardContainer = styled('div', {
   height: '65%',
-  border: 'solid 1px red',
   position: 'relative',
-  margin: 'auto',
+  marginLeft: 'auto',
+  marginRight: 'auto',
 })
-
-// const BadgeContainer = styled('div', {
-//   background: 'white',
-//   border: 'solid 1px red',
-//   textAlign: 'start',
-//   marginLeft: '50%',
-// })
 
 export default function Awards() {
   return (

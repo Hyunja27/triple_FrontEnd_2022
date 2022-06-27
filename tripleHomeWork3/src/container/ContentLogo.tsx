@@ -22,10 +22,7 @@ const ImageText = styled('p', {
 export default function Awards() {
   return (
     <LogoContainer>
-      <ImageContainer
-        src={triple2x}
-        alt="the poor From Egypt with blue guitar"
-      />
+      <ImageContainer src={triple2x} alt="triple Logo" />
       <ImageText>2021년 12월 기준</ImageText>
     </LogoContainer>
   )

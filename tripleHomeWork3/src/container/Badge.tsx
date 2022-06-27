@@ -3,11 +3,14 @@ import playStore2x from '../img/play-store2x.png'
 import { styled } from '../theme/theme'
 
 const BadgeContainer = styled('div', {
-  background: 'white',
-  border: 'solid 1px red',
-  textAlign: 'start',
-  marginLeft: '55%',
   display: 'flex',
+  marginLeft: '55%',
+})
+
+const BadgeItem = styled('div', {
+  textAlign: 'start',
+  display: 'flex',
+  minWidth: '230px',
 })
 
 const ImageContainer = styled('img', {
@@ -22,19 +25,19 @@ const BadgeText = styled('p', {
 
 export default function Badge() {
   return (
-    <>
-      <BadgeContainer>
+    <BadgeContainer>
+      <BadgeItem>
         <ImageContainer src={playStore2x} alt="PlayStore badge" />
         <BadgeText>
           2018 구글 플레이스토어 <br /> 올해의 앱 최우수상 수상
         </BadgeText>
-      </BadgeContainer>
-      <BadgeContainer>
+      </BadgeItem>
+      <BadgeItem>
         <ImageContainer src={badgeApple4x} alt="Apple badge" />
         <BadgeText>
           2018 애플 앱스토어 <br /> 오늘의 여행앱 선정
         </BadgeText>
-      </BadgeContainer>
-    </>
+      </BadgeItem>
+    </BadgeContainer>
   )
 }

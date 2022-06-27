@@ -2,20 +2,18 @@ import { styled } from '../theme/theme'
 
 const MatricsContainer = styled('div', {
   height: '53%',
-  border: 'solid 1px red',
   position: 'relative',
-  margin: 'auto',
 })
 
 const TextContainer = styled('div', {
   textAlign: 'start',
   marginLeft: '55%',
-  marginTop: '6.5%',
+  marginTop: '100px',
 })
 
 const MatricsText = styled('p', {
   fontSize: '36px',
-  marginBottom: '3%',
+  marginBottom: '20px',
 })
 
 const WeightText = styled('span', {
