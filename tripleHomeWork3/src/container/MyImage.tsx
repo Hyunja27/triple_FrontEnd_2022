@@ -5,7 +5,7 @@ import { styled } from '../theme/theme'
 //   height: '95vh',
 // })
 
-const P = styled('div', {
+const P = styled('section', {
   height: '95vh',
   background: 'Purple',
 })

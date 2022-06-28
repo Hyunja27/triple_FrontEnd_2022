@@ -2,7 +2,7 @@
 import { styled } from './theme/theme'
 import MainPage from './page/MainPage'
 
-const AppContainer = styled('div', {
+const AppContainer = styled('section', {
   width: '100vw',
   minWidth: '1200px',
 })

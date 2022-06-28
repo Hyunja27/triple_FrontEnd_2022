@@ -1,7 +1,7 @@
 import triple2x from '../img/triple2x.png'
 import { styled, fadeIn } from '../theme/theme'
 
-const LogoContainer = styled('div', {
+const LogoContainer = styled('section', {
   position: 'absolute',
   right: '60%',
   animation: `${fadeIn} 1100ms`,

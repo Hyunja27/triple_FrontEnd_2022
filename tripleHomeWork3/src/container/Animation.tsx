@@ -4,7 +4,7 @@ import Awards from './Awards'
 import ContentLogo from './ContentLogo'
 import Matrics from './Matrics'
 
-const AnimationContainer = styled('div', {
+const AnimationContainer = styled('section', {
   height: '50vh',
   width: '80%',
   margin: 'auto',

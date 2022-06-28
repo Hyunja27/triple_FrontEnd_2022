@@ -14,23 +14,23 @@ const counter = ($counter: Element | null, max: number) => {
 
     const step = now / 10
     now -= step
-  }, 50)
+  }, 35)
 }
 
 window.onload = () => {
   const $counter = document.querySelector('.Matrics1')
   const max = 700
-  setTimeout(() => counter($counter, max), 2000)
+  setTimeout(() => counter($counter, max), 0)
 }
 
-const MatricsContainer = styled('div', {
+const MatricsContainer = styled('article', {
   height: '200px',
   animation: `${fadeIn} 700ms`,
   animationDelay: '800ms',
   animationFillMode: 'backwards',
 })
 
-const TextContainer = styled('div', {
+const TextContainer = styled('section', {
   marginLeft: '55%',
   marginTop: '100px',
   textAlign: 'start',
