@@ -1,26 +1,29 @@
 import { styled, fadeIn } from '../theme/theme'
 
-const counter = ($counter: Element | null, max: number) => {
+const counter = ($num: Element | null, max: number, speed: number) => {
   let now = max
 
   const handle = setInterval(() => {
-    if ($counter !== null) {
-      $counter.innerHTML = Math.ceil(max - now).toString()
+    if ($num !== null) {
+      $num.innerHTML = Math.ceil(max - now).toString()
     }
-
     if (now < 0) {
       clearInterval(handle)
     }
-
     const step = now / 10
     now -= step
-  }, 35)
+  }, speed)
+  return handle
 }
 
 window.onload = () => {
-  const $counter = document.querySelector('.Matrics1')
-  const max = 700
-  setTimeout(() => counter($counter, max), 0)
+  const tmp1 = counter(document.querySelector('.Matrics1'), 700, 31)
+  const tmp2 = counter(document.querySelector('.Matrics2'), 100, 41)
+  const tmp3 = counter(document.querySelector('.Matrics3'), 470, 31)
+
+  setTimeout(() => clearInterval(tmp1), 2000)
+  setTimeout(() => clearInterval(tmp2), 2000)
+  setTimeout(() => clearInterval(tmp3), 2000)
 }
 
 const MatricsContainer = styled('article', {
