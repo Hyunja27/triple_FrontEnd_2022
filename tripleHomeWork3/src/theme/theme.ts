@@ -1,4 +1,4 @@
-import { createStitches } from '@stitches/react'
+import { createStitches, keyframes } from '@stitches/react'
 
 // size settings for several devices
 const size = {
@@ -27,6 +27,16 @@ export const { styled, css } = createStitches({
     tabletL: theme.tabletL,
     laptop: theme.laptop,
     desktop: theme.desktop,
+  },
+})
+
+export const fadeIn = keyframes({
+  '0%': {
+    opacity: '0',
+    transform: 'translate3d(0, 10%, 0)',
+  },
+  '100%': {
+    opacity: '1',
   },
 })
 

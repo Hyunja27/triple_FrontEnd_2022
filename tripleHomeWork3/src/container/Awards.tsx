@@ -1,12 +1,11 @@
-import { styled } from '../theme/theme'
+import { styled, fadeIn } from '../theme/theme'
 
 import Badge from './Badge'
 
 const AwardContainer = styled('div', {
-  height: '65%',
-  position: 'relative',
   marginLeft: 'auto',
   marginRight: 'auto',
+  animation: `${fadeIn} 1600ms`,
 })
 
 export default function Awards() {

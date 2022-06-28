@@ -1,19 +1,32 @@
+import { keyframes } from '@stitches/react'
+
 import { styled } from '../theme/theme'
 
+const fadeIn = keyframes({
+  '0%': {
+    opacity: '0',
+    transform: 'translate3d(0, 5%, 0)',
+  },
+  '100%': {
+    opacity: '1',
+  },
+})
+
 const MatricsContainer = styled('div', {
-  height: '53%',
-  position: 'relative',
+  height: '200px',
+  animation: `${fadeIn} 1100ms`,
 })
 
 const TextContainer = styled('div', {
-  textAlign: 'start',
   marginLeft: '55%',
   marginTop: '100px',
+  textAlign: 'start',
 })
 
 const MatricsText = styled('p', {
-  fontSize: '36px',
   marginBottom: '20px',
+  fontSize: '36px',
+  fontFamily: 'sans-serif',
 })
 
 const WeightText = styled('span', {

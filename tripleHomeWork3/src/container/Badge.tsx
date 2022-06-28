@@ -3,24 +3,29 @@ import playStore2x from '../img/play-store2x.png'
 import { styled } from '../theme/theme'
 
 const BadgeContainer = styled('div', {
-  display: 'flex',
   marginLeft: '55%',
+  display: 'flex',
 })
 
 const BadgeItem = styled('div', {
-  textAlign: 'start',
-  display: 'flex',
   minWidth: '230px',
+  textAlign: 'start',
+  alignItems: 'center',
+  display: 'flex',
 })
 
 const ImageContainer = styled('img', {
   width: '54px',
   height: '54px',
+  marginRight: '10px',
 })
 
 const BadgeText = styled('p', {
-  fontSize: '16px',
   lineHeight: '22px',
+  fontSize: '16px',
+  color: 'rgba(58, 58, 58, 0.8)',
+  fontWeight: 'bold',
+  fontFamily: 'sans-serif',
 })
 
 export default function Badge() {

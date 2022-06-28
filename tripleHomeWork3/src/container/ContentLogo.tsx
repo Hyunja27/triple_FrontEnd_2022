@@ -1,10 +1,10 @@
 import triple2x from '../img/triple2x.png'
-import { styled } from '../theme/theme'
+import { styled, fadeIn } from '../theme/theme'
 
 const LogoContainer = styled('div', {
-  left: '20%',
-  top: '20px',
   position: 'absolute',
+  right: '60%',
+  animation: `${fadeIn} 1100ms`,
 })
 
 const ImageContainer = styled('img', {
@@ -17,6 +17,9 @@ const ImageText = styled('p', {
   position: 'absolute',
   left: '50%',
   transform: 'translateX(-50%)',
+  color: 'rgba(58, 58, 58, 0.7);',
+  fontFamily: 'sans-serif',
+  font: '10px',
 })
 
 export default function Awards() {
