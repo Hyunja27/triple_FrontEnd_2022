@@ -5,7 +5,9 @@ import Badge from './Badge'
 const AwardContainer = styled('div', {
   marginLeft: 'auto',
   marginRight: 'auto',
-  animation: `${fadeIn} 1600ms`,
+  animation: `${fadeIn} 700ms`,
+  animationDelay: '1600ms',
+  animationFillMode: 'backwards',
 })
 
 export default function Awards() {

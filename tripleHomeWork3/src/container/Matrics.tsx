@@ -1,20 +1,10 @@
-import { keyframes } from '@stitches/react'
-
-import { styled } from '../theme/theme'
-
-const fadeIn = keyframes({
-  '0%': {
-    opacity: '0',
-    transform: 'translate3d(0, 5%, 0)',
-  },
-  '100%': {
-    opacity: '1',
-  },
-})
+import { styled, fadeIn } from '../theme/theme'
 
 const MatricsContainer = styled('div', {
   height: '200px',
-  animation: `${fadeIn} 1100ms`,
+  animation: `${fadeIn} 700ms`,
+  animationDelay: '800ms',
+  animationFillMode: 'backwards',
 })
 
 const TextContainer = styled('div', {
