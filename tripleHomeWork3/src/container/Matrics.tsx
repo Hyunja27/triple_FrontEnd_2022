@@ -1,5 +1,28 @@
 import { styled, fadeIn } from '../theme/theme'
 
+const counter = ($counter: Element | null, max: number) => {
+  let now = max
+
+  const handle = setInterval(() => {
+    if ($counter !== null) {
+      $counter.innerHTML = Math.ceil(max - now).toString()
+    }
+
+    if (now < 0) {
+      clearInterval(handle)
+    }
+
+    const step = now / 10
+    now -= step
+  }, 50)
+}
+
+window.onload = () => {
+  const $counter = document.querySelector('.Matrics1')
+  const max = 700
+  setTimeout(() => counter($counter, max), 2000)
+}
+
 const MatricsContainer = styled('div', {
   height: '200px',
   animation: `${fadeIn} 700ms`,
@@ -28,13 +51,22 @@ export default function Matrics() {
     <MatricsContainer>
       <TextContainer>
         <MatricsText>
-          <WeightText>700만 명</WeightText>의 여행자
+          <WeightText>
+            <span className="Matrics1">0</span>만 명
+          </WeightText>
+          의 여행자
         </MatricsText>
         <MatricsText>
-          <WeightText>100만 개</WeightText>의 여행리뷰
+          <WeightText>
+            <span className="Matrics2">100</span>만 개
+          </WeightText>
+          의 여행리뷰
         </MatricsText>
         <MatricsText>
-          <WeightText>470만 개</WeightText>의 여행일정
+          <WeightText>
+            <span className="Matrics3">470</span>만 개
+          </WeightText>
+          의 여행일정
         </MatricsText>
       </TextContainer>
     </MatricsContainer>
