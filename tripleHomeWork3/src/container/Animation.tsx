@@ -8,6 +8,7 @@ const AnimationContainer = styled('section', {
   height: '50vh',
   width: '80%',
   margin: 'auto',
+  marginTop: '9%',
   textAlign: 'center',
   position: 'relative',
 })

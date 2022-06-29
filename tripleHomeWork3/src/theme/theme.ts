@@ -40,8 +40,12 @@ export const fadeIn = keyframes({
   },
 })
 
-export const hr = styled('hr', {
-  border: '1px solid transparent',
-  marginTop: '-5px',
-  marginBottom: '20px',
+export const leftFadeIn = keyframes({
+  '0%': {
+    opacity: '0',
+    transform: 'translate3d(-10%, 0%, 0)',
+  },
+  '100%': {
+    opacity: '1',
+  },
 })
