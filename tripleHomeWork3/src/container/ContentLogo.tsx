@@ -4,7 +4,8 @@ import { styled, fadeIn } from '../theme/theme'
 const LogoContainer = styled('section', {
   position: 'absolute',
   right: '60%',
-  animation: `${fadeIn} 1100ms`,
+  animation: `${fadeIn} 700ms`,
+  animationDelay: '100ms',
 })
 
 const ImageContainer = styled('img', {
@@ -13,7 +14,7 @@ const ImageContainer = styled('img', {
 })
 
 const ImageText = styled('p', {
-  bottom: '15%',
+  bottom: '14%',
   position: 'absolute',
   left: '50%',
   transform: 'translateX(-50%)',

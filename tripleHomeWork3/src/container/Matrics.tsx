@@ -18,7 +18,7 @@ const counter = ($num: Element | null, max: number, speed: number) => {
 
 window.onload = () => {
   const tmp1 = counter(document.querySelector('.Matrics1'), 700, 31)
-  const tmp2 = counter(document.querySelector('.Matrics2'), 100, 41)
+  const tmp2 = counter(document.querySelector('.Matrics2'), 100, 38)
   const tmp3 = counter(document.querySelector('.Matrics3'), 470, 31)
 
   setTimeout(() => clearInterval(tmp1), 2000)
@@ -29,7 +29,7 @@ window.onload = () => {
 const MatricsContainer = styled('article', {
   height: '200px',
   animation: `${fadeIn} 700ms`,
-  animationDelay: '800ms',
+  animationDelay: '200ms',
   animationFillMode: 'backwards',
 })
 
