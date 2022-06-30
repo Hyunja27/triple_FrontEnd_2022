@@ -29,7 +29,7 @@ window.onload = () => {
 const MatricsContainer = styled('article', {
   height: '200px',
   animation: `${fadeIn} 700ms`,
-  animationDelay: '200ms',
+  animationDelay: '900ms',
   animationFillMode: 'backwards',
 })
 
