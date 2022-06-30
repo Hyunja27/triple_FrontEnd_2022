@@ -3,9 +3,9 @@ import MyImage from '../container/MyImage'
 
 export default function MainPage() {
   return (
-    <div>
+    <article id="mainPage">
       <MyImage />
       <Animation />
-    </div>
+    </article>
   )
 }

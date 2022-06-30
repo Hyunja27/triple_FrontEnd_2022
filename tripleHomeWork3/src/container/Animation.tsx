@@ -2,22 +2,23 @@ import { styled } from '../theme/theme'
 
 import Awards from './Awards'
 import ContentLogo from './ContentLogo'
-import Matrics from './Matrics'
+import Statistics from './Statistic'
 
-const AnimationContainer = styled('section', {
-  height: '50vh',
+const AnimationContainer = styled('article', {
   width: '80%',
+  height: '35vh',
   margin: 'auto',
-  marginTop: '9%',
-  textAlign: 'center',
+  marginTop: '10%',
+  marginBottom: '10%',
   position: 'relative',
+  textAlign: 'center',
 })
 
 export default function Animation() {
   return (
-    <AnimationContainer>
+    <AnimationContainer id="animationInfoZone">
       <ContentLogo />
-      <Matrics />
+      <Statistics />
       <Awards />
     </AnimationContainer>
   )

@@ -2,7 +2,7 @@ import { styled, fadeIn } from '../theme/theme'
 
 import Badge from './Badge'
 
-const AwardContainer = styled('div', {
+const AwardContainer = styled('section', {
   marginLeft: 'auto',
   marginRight: 'auto',
   animation: `${fadeIn} 700ms`,
@@ -12,7 +12,7 @@ const AwardContainer = styled('div', {
 
 export default function Awards() {
   return (
-    <AwardContainer>
+    <AwardContainer id="awardInfoZone">
       <Badge />
     </AwardContainer>
   )

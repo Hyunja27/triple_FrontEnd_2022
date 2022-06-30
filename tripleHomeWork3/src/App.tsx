@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 import { styled } from './theme/theme'
 import MainPage from './page/MainPage'
 
