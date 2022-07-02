@@ -2,12 +2,12 @@ import badgeApple4x from '../img/badge-apple4x.png'
 import playStore2x from '../img/play-store2x.png'
 import { styled } from '../theme/theme'
 
-const BadgeContainer = styled('div', {
+const BadgeContainer = styled('section', {
   marginLeft: '55%',
   display: 'flex',
 })
 
-const BadgeItem = styled('div', {
+const BadgeItem = styled('section', {
   minWidth: '230px',
   textAlign: 'start',
   alignItems: 'center',
@@ -30,15 +30,15 @@ const BadgeText = styled('p', {
 
 export default function Badge() {
   return (
-    <BadgeContainer>
-      <BadgeItem>
-        <ImageContainer src={playStore2x} alt="PlayStore badge" />
+    <BadgeContainer id="awardBadgeZone">
+      <BadgeItem id="awardBadge_PlayStore">
+        <ImageContainer src={playStore2x} alt="PlayStoreBadge" />
         <BadgeText>
           2018 구글 플레이스토어 <br /> 올해의 앱 최우수상 수상
         </BadgeText>
       </BadgeItem>
-      <BadgeItem>
-        <ImageContainer src={badgeApple4x} alt="Apple badge" />
+      <BadgeItem id="awardBadge_AppleStore">
+        <ImageContainer src={badgeApple4x} alt="AppleBadge" />
         <BadgeText>
           2018 애플 앱스토어 <br /> 오늘의 여행앱 선정
         </BadgeText>

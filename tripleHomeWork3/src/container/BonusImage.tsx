@@ -3,36 +3,35 @@ import bg from '../img/img-01-bg.png'
 import { styled, leftFadeIn } from '../theme/theme'
 // import { styled } from '../theme/theme'
 
-const ResumeZone = styled('section', {
+const ResumeZone = styled('article', {
   height: '88vh',
-  background: 'rgb(65, 206, 211)',
   position: 'relative',
+  background: 'rgb(65, 206, 211)',
 })
 
 const BackgroundImage = styled('img', {
-  height: '88vh',
   width: '100vw',
+  height: '88vh',
   objectFit: 'fill',
 })
 
 const ImageContainer = styled('img', {
   width: '550px',
   height: '520px',
-  position: 'absolute',
   top: '35vh',
   left: '10vw',
+  position: 'absolute',
   animation: `${leftFadeIn} 700ms`,
   animationDelay: '100ms',
 })
 
 const TextContainer = styled('section', {
-  top: '35vh',
-  left: '50vw',
-  textAlign: 'start',
   position: 'absolute',
+  textAlign: 'start',
 })
 
-const MyImageText = styled('p', {
+const MyImageText = styled('span', {
+  color: 'white',
   fontSize: '36px',
   fontFamily: 'sans-serif',
   animation: `${leftFadeIn} 700ms`,
@@ -46,13 +45,13 @@ const WeightText = styled('span', {
 
 export default function Image() {
   return (
-    <ResumeZone>
-      <BackgroundImage src={bg} alt="triple Logo" />
-      <ImageContainer src={profile} alt="triple Logo" />
-      <TextContainer>
+    <ResumeZone id="mainImageZone">
+      <BackgroundImage id="backGroundImage" src={bg} alt="triple Logo" />
+      <ImageContainer id="profilePhoto" src={profile} alt="triple Logo" />
+      <TextContainer id="introduceText" css={{ top: '35vh', left: '50vw' }}>
         <MyImageText>
-          오해하지 마세요. <br />
-          <WeightText>술은 적당히만 마신답니다.</WeightText>
+          <br />
+          <WeightText>코딩 맥주는 딱 한캔만 마신답니다.</WeightText>
         </MyImageText>
       </TextContainer>
     </ResumeZone>
