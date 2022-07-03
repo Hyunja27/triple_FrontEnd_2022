@@ -18,20 +18,18 @@ const WeightText = styled('span', {
 export default function SingleStatistic(props: { data: StatisticType }) {
   const { destValue, unit, content } = props.data
   const [statNumber, setStatNumber] = useState(0)
-  const startTime = Number(new Date())
+  const endTime = Number(new Date()) + 700
 
   useEffect(() => {
     if (statNumber === destValue) {
       return
     }
     const increaseInteval =
-      (startTime - Number(new Date())) / (destValue - statNumber)
+      (endTime - Number(new Date())) / (destValue - statNumber)
     setTimeout(() => {
       setStatNumber(statNumber + 1)
     }, increaseInteval)
-    // console.log(destValue, "=> ", increaseInteval)
-    // console.log(startTime)
-  })
+  }, [statNumber])
 
   return (
     <StatisticText>

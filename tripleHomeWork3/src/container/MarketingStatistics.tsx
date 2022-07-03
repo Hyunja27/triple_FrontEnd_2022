@@ -18,16 +18,6 @@ const TextContainer = styled('div', {
   textAlign: 'start',
 })
 
-// const StatisticText = styled('p', {
-//   marginBottom: '20px',
-//   fontFamily: 'sans-serif',
-//   fontSize: '36px',
-// })
-
-// const WeightText = styled('span', {
-//   fontWeight: 'bold',
-// })
-
 export default function Statistic() {
   const infoMetrics: Array<StatisticType> = [
     {
@@ -46,36 +36,6 @@ export default function Statistic() {
       content: '여행일정',
     },
   ]
-
-  // const travelerNum = 700
-  // const reviewNum = 100
-  // const planNum = 470
-
-  // const travelerCount = useRef<HTMLSpanElement>(null)
-  // const reviewCount = useRef<HTMLSpanElement>(null)
-  // const planCount = useRef<HTMLSpanElement>(null)
-
-  // const counter = ($num: Element | null, max: number) => {
-  //   let now = max
-
-  //   const handle = setInterval(() => {
-  //     if ($num !== null) {
-  //       $num.innerHTML = Math.ceil(max - now).toString()
-  //     }
-  //     if (now < 0) {
-  //       clearInterval(handle)
-  //     }
-  //     const step = now / 8
-  //     now -= step
-  //   }, 20)
-  //   return handle
-  // }
-
-  // window.onload = () => {
-  //   counter(travelerCount.current, travelerNum)
-  //   counter(reviewCount.current, reviewNum)
-  //   counter(planCount.current, planNum)
-  // }
 
   return (
     <StatisticContainer>
