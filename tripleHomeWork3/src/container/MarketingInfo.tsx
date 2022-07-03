@@ -1,8 +1,8 @@
 import { styled } from '../theme/theme'
 
 import CompanyLogo from './CompanyLogo'
-import MarketingAwards from './MarketingAwards'
-import MarketingStatistics from './MarketingStatistics'
+import MarketingAwards from './awards/MarketingAwards'
+import MarketingStatistics from './statistics/MarketingStatistics'
 
 const InfoContainer = styled('div', {
   width: '80%',

@@ -1,4 +1,4 @@
-import { styled, fadeIn } from '../theme/theme'
+import { styled, fadeIn } from '../../theme/theme'
 
 import Badge from './AwardBadge'
 

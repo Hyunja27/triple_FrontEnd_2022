@@ -1,6 +1,6 @@
-import badgeApple4x from '../img/badge-apple4x.png'
-import playStore2x from '../img/play-store2x.png'
-import { styled } from '../theme/theme'
+import badgeApple4x from '../../img/badge-apple4x.png'
+import playStore2x from '../../img/play-store2x.png'
+import { styled } from '../../theme/theme'
 
 const BadgeContainer = styled('div', {
   marginLeft: '55%',

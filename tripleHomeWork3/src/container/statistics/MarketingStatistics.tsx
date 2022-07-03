@@ -1,7 +1,5 @@
-// import { useRef } from 'react'
-
-import { styled, fadeIn } from '../theme/theme'
-import { StatisticType } from '../customType'
+import { styled, fadeIn } from '../../theme/theme'
+import { StatisticType } from '../../customType'
 
 import SingleStatistic from './SingleStatistic'
 
@@ -26,7 +24,7 @@ export default function Statistic() {
       content: '여행자',
     },
     {
-      destValue: 1000,
+      destValue: 100,
       unit: '만 개',
       content: '여행리뷰',
     },

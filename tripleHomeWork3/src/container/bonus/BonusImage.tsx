@@ -1,6 +1,6 @@
-import profile from '../img/profile.png'
-import bg from '../img/img-01-bg.png'
-import { styled, leftFadeIn } from '../theme/theme'
+import profile from '../../img/profile.png'
+import bg from '../../img/img-01-bg.png'
+import { styled, leftFadeIn } from '../../theme/theme'
 // import { styled } from '../theme/theme'
 
 const ResumeZone = styled('article', {
