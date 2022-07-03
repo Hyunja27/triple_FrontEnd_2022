@@ -1,12 +1,7 @@
-import { useRef } from 'react'
+import { useState, useEffect } from 'react'
 
+import { StatisticType } from '../customType'
 import { styled } from '../theme/theme'
-
-interface StatisticType {
-  value: number
-  unit: string
-  content: string
-}
 
 // const infoMetrics = { value: 700, unit: '만 명', content: '여행자' }
 
@@ -20,34 +15,38 @@ const WeightText = styled('span', {
   fontWeight: 'bold',
 })
 
-export default function Statistic(data: StatisticType) {
-  const { value, unit, content } = data
-  const numCounter = useRef<HTMLSpanElement>(null)
+export default function SingleStatistic(props: { data: StatisticType }) {
+  const { value, unit, content } = props.data
+  const [statNumber, setStatNumber] = useState(0)
 
-  const counter = ($num: Element | null, max: number) => {
-    let now = max
+  useEffect(()=> {
 
-    const handle = setInterval(() => {
-      if ($num !== null) {
-        $num.innerHTML = Math.ceil(max - now).toString()
-      }
-      if (now < 0) {
-        clearInterval(handle)
-      }
-      const step = now / 20
-      now -= step
-    }, 20)
-    return handle
-  }
+  })
 
-  window.onload = () => {
-    counter(numCounter.current, value)
-  }
+  // const counter = ($num: Element | null, max: number) => {
+  //   let now = max
+
+  //   const handle = setInterval(() => {
+  //     if ($num !== null) {
+  //       $num.innerHTML = Math.ceil(max - now).toString()
+  //     }
+  //     if (now < 0) {
+  //       clearInterval(handle)
+  //     }
+  //     const step = now / 20
+  //     now -= step
+  //   }, 20)
+  //   return handle
+  // }
+
+  // window.onload = () => {
+  //   counter(numCounter.current, value)
+  // }
 
   return (
     <StatisticText>
       <WeightText>
-        <span ref={numCounter}>{value}</span> {unit}
+        <span>{value}</span> {unit}
       </WeightText>
       의 {content}
     </StatisticText>

@@ -1,14 +1,9 @@
 // import { useRef } from 'react'
 
 import { styled, fadeIn } from '../theme/theme'
+import { StatisticType } from '../customType'
 
 import SingleStatistic from './SingleStatistic'
-
-interface StatisticType {
-  value: number
-  unit: string
-  content: string
-}
 
 const StatisticContainer = styled('div', {
   height: '200px',
@@ -34,11 +29,24 @@ const TextContainer = styled('div', {
 // })
 
 export default function Statistic() {
-  const infoMetrics: StatisticType = {
-    value: 700,
-    unit: '만 명',
-    content: '여행자',
-  }
+  const infoMetrics: Array<StatisticType> = [
+    {
+      value: 700,
+      unit: '만 명',
+      content: '여행자',
+    },
+    {
+      value: 1000,
+      unit: '만 개',
+      content: '여행리뷰',
+    },
+    {
+      value: 470,
+      unit: '만 개',
+      content: '여행일정',
+    },
+  ]
+
   // const travelerNum = 700
   // const reviewNum = 100
   // const planNum = 470
@@ -72,25 +80,9 @@ export default function Statistic() {
   return (
     <StatisticContainer>
       <TextContainer>
-        <SingleStatistic data={infoMetrics} />
-        {/* <StatisticText>
-          <WeightText>
-            <span ref={travelerCount}>{travelerNum}</span>만 명
-          </WeightText>
-          의 여행자
-        </StatisticText>
-        <StatisticText>
-          <WeightText>
-            <span ref={reviewCount}>{reviewNum}</span>만 개
-          </WeightText>
-          의 여행리뷰
-        </StatisticText>
-        <StatisticText>
-          <WeightText>
-            <span ref={planCount}>{planNum}</span>만 개
-          </WeightText>
-          의 여행일정
-        </StatisticText> */}
+        {infoMetrics.map((MetricsData) => (
+          <SingleStatistic key={MetricsData.content} data={MetricsData} />
+        ))}
       </TextContainer>
     </StatisticContainer>
   )
