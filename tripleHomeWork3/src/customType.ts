@@ -1,5 +1,5 @@
 export interface StatisticType {
-  value: number
+  destValue: number
   unit: string
   content: string
 }

@@ -16,37 +16,27 @@ const WeightText = styled('span', {
 })
 
 export default function SingleStatistic(props: { data: StatisticType }) {
-  const { value, unit, content } = props.data
+  const { destValue, unit, content } = props.data
   const [statNumber, setStatNumber] = useState(0)
+  const startTime = Number(new Date())
 
-  useEffect(()=> {
-
+  useEffect(() => {
+    if (statNumber === destValue) {
+      return
+    }
+    const increaseInteval =
+      (startTime - Number(new Date())) / (destValue - statNumber)
+    setTimeout(() => {
+      setStatNumber(statNumber + 1)
+    }, increaseInteval)
+    // console.log(destValue, "=> ", increaseInteval)
+    // console.log(startTime)
   })
-
-  // const counter = ($num: Element | null, max: number) => {
-  //   let now = max
-
-  //   const handle = setInterval(() => {
-  //     if ($num !== null) {
-  //       $num.innerHTML = Math.ceil(max - now).toString()
-  //     }
-  //     if (now < 0) {
-  //       clearInterval(handle)
-  //     }
-  //     const step = now / 20
-  //     now -= step
-  //   }, 20)
-  //   return handle
-  // }
-
-  // window.onload = () => {
-  //   counter(numCounter.current, value)
-  // }
 
   return (
     <StatisticText>
       <WeightText>
-        <span>{value}</span> {unit}
+        <span>{statNumber}</span> {unit}
       </WeightText>
       의 {content}
     </StatisticText>

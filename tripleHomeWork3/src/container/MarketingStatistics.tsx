@@ -31,17 +31,17 @@ const TextContainer = styled('div', {
 export default function Statistic() {
   const infoMetrics: Array<StatisticType> = [
     {
-      value: 700,
+      destValue: 700,
       unit: '만 명',
       content: '여행자',
     },
     {
-      value: 1000,
+      destValue: 1000,
       unit: '만 개',
       content: '여행리뷰',
     },
     {
-      value: 470,
+      destValue: 470,
       unit: '만 개',
       content: '여행일정',
     },
