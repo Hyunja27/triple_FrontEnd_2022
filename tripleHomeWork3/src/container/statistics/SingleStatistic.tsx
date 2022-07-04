@@ -16,7 +16,7 @@ const WeightText = styled('span', {
 export default function SingleStatistic(props: { data: StatisticType }) {
   const { destValue, unit, content } = props.data
   const [statNumber, setStatNumber] = useState(0)
-  const runTime = 300
+  const runTime = 250
   const endTime = Number(new Date()) + runTime
 
   useEffect(() => {
