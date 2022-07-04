@@ -21,8 +21,7 @@
 ## 📜 How To Start
 
 ##### [OneLine Command] 
-<br/>
-(아래의 command line 을 복사하여 터미널에서 실행하고, 브라우저의 "localhost:3000"으로 접근하세요.)
+=> 아래의 command line 을 복사하여 터미널에서 실행하고, 브라우저의 "localhost:3000"으로 접근하세요.
 
 ```
 git clone https://github.com/Hyunja27/triple_FrontEnd_2022.git && cd triple_FrontEnd_2022 && cd tripleHomeWork3 && npm i && npm run dev
@@ -60,7 +59,7 @@ npm run dev
 
 #### Core :   React, typeScript <br/>
 #### stateControl :   React Hooks <br/>
-#### style :   Stitches <br/>
+#### style :   Stitches (css-in-js) <br/>
 <br/>
 <br/>
 
