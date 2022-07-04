@@ -26,12 +26,12 @@ export default function Statistic() {
     {
       destValue: 100,
       unit: '만 개',
-      content: '여행리뷰',
+      content: '여행 리뷰',
     },
     {
       destValue: 470,
       unit: '만 개',
-      content: '여행일정',
+      content: '여행 일정',
     },
   ]
 
