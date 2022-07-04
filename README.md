@@ -20,7 +20,7 @@
 
 ## 📜 How To Start
 
-##### [OneLine Command] 
+#### [OneLine Command] 
 => 아래의 command line 을 복사하여 터미널에서 실행하고, 브라우저의 "localhost:3000"으로 접근하세요.
 
 ```
@@ -28,7 +28,7 @@ git clone https://github.com/Hyunja27/triple_FrontEnd_2022.git && cd triple_Fron
 
 ```
 
-##### [설치 및 실행방법] 
+#### [설치 및 실행방법] 
 
 1. 해당 레포지토리를 클론합니다.
 
@@ -93,22 +93,22 @@ Redux 등의 상태관리 라이브러리를 사용하는 것보다, React Hook�
 
 ## 🗺️ Record of Think
   
-  1. triple 메인 사이트의 레이아웃에 대해 고찰해보았습니다.
+  ##### 1. triple 메인 사이트의 레이아웃에 대해 고찰해보았습니다.
   - 메인 사이트의 화면을 줄이니, static section의 왼쪽 Logo 부분이 상단으로 재배치되면서 반응형 배치로 바뀌는 것을 관찰했어요.
   - Logo 컴포넌트의 'absolute' 배치가 소거되면서 상단으로 재배치 & 크기조정 되는 반응형 화면 구조를 적용할지 고민했어요.
   - 흥미로운 구조였지만, 반응형 디자인은 과제의 요구사항이 아니기에 따로 반응형 리사이징 & 재배치 로직을 만들지 않았습니다.
   
-  2. Counter 애니메이션에 대해 고민했습니다.
+  ##### 2. Counter 애니메이션에 대해 고민했습니다.
   - 따로 Branch를 두고, 이에 대한 구현 작업에 집중하였어요.
   - Counter 라이브러리를 사용한 구현방안이 가장 효율적이였지만, 요건에 맞는 컴포넌트를 만들기 위해 해당 방안은 선택하지 않았어요.
   - 처음에는 <a href="https://github.com/Hyunja27/triple_FrontEnd_2022/commit/f701eb84d2927bd0395329aa2a2e3be9a7c1ab70"> querySelector를 이용하여 window DOM을 선택하는 방식으로 <a/>으로 2초 내에 동시에 끝나는 카운터를 구현하였지만, 문제가 있다고 판단했어요.
   - 상기 구현방식은 재사용성에 문제가 있고, 더불어 React를 사용한 작업방식을 선택하고 싶었기에, <br/>
   React Hook을 통한 state 관리 & 렌더링 방법으로 변경했어요. 
   
-  3. static section에서의 재사용성에 대해 고민했습니다.
+  ##### 3. static section에서의 재사용성에 대해 고민했습니다.
   - 다양한 단위와 값을 받을 수 있게 만들고 싶었어요.  <br/> statistics 컴포넌트를 Single 단위로 분리해서, 표현할 정보 개수를 변경할 수 있게 만들었어요.
   
-  4. 각 데이터들을 API로 받아올 수 있도록 구현해야 하는지 고민했습니다.
+  ##### 4. 각 데이터들을 API로 받아올 수 있도록 구현해야 하는지 고민했습니다.
   - stitistic의 데이터나 Award의 문자열 값 등을 BackEnd와의 API 전달로 받아올 수 있게 설계하는 방안을 생각해보았어요.
   - static section의 특성 상, 별도 통신 없이 고정값을 가질 수 있도록 디자인 하는 것이 효율적이라고 판단하여 API 서버를 만들지 않았어요.
 
