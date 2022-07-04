@@ -22,7 +22,7 @@ const ImageContainer = styled('img', {
 
 const BadgeText = styled('p', {
   lineHeight: '22px',
-  fontSize: '16px',
+  fontSize: '14px',
   color: 'rgba(58, 58, 58, 0.8)',
   fontWeight: 'bold',
   fontFamily: 'sans-serif',
