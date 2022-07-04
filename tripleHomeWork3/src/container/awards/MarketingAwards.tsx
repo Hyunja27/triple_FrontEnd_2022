@@ -1,6 +1,6 @@
-import { styled, fadeIn } from '../theme/theme'
+import { styled, fadeIn } from '../../theme/theme'
 
-import Badge from './Badge'
+import Badge from './AwardBadge'
 
 const AwardContainer = styled('section', {
   marginLeft: 'auto',

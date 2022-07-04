@@ -1,11 +1,11 @@
-import Animation from '../container/Animation'
-import MyImage from '../container/MyImage'
+import MarketingInfo from '../container/MarketingInfo'
+// import MainImage from '../container/BonusImage'
 
 export default function MainPage() {
   return (
-    <article id="mainPage">
-      <MyImage />
-      <Animation />
-    </article>
+    <section>
+      {/* <MainImage /> */}
+      <MarketingInfo />
+    </section>
   )
 }

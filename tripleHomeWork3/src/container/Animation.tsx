@@ -1,7 +1,7 @@
 import { styled } from '../theme/theme'
 
-import Awards from './Awards'
-import ContentLogo from './ContentLogo'
+import Awards from './awards/MarketingAwards'
+import CompanyLogo from './CompanyLogo'
 import Statistics from './Statistic'
 
 const AnimationContainer = styled('article', {
@@ -17,7 +17,7 @@ const AnimationContainer = styled('article', {
 export default function Animation() {
   return (
     <AnimationContainer id="animationInfoZone">
-      <ContentLogo />
+      <CompanyLogo />
       <Statistics />
       <Awards />
     </AnimationContainer>

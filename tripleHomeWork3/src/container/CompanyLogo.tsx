@@ -1,7 +1,7 @@
 import triple2x from '../img/triple2x.png'
 import { styled, fadeIn } from '../theme/theme'
 
-const LogoContainer = styled('section', {
+const LogoContainer = styled('div', {
   right: '60%',
   position: 'absolute',
   animation: `${fadeIn} 700ms`,
@@ -23,9 +23,9 @@ const ImageText = styled('span', {
   font: '10px',
 })
 
-export default function Awards() {
+export default function CompanyLogo() {
   return (
-    <LogoContainer id="tripleLogoZone">
+    <LogoContainer>
       <ImageContainer src={triple2x} alt="tripleCompanyLogo" />
       <ImageText>2021년 12월 기준</ImageText>
     </LogoContainer>
