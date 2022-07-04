@@ -100,7 +100,7 @@ Redux 등의 상태관리 라이브러리를 사용하는 것보다, React Hook�
   2. Counter 애니메이션에 대해 고민했습니다.
   - 따로 Branch를 두고, 이에 대한 구현 작업에 집중하였어요.
   - Counter 라이브러리를 사용한 구현방안이 가장 효율적이였지만, 요건에 맞는 컴포넌트를 만들기 위해 해당 방안은 선택하지 않았어요.
-  - 처음에는 <a href=""> querySelector를 이용하여 window DOM을 선택하는 방식으로 <a/>으로 2초 내에 동시에 끝나는 카운터를 구현하였지만, 문제가 있다고 판단했어요.
+  - 처음에는 <a href="https://github.com/Hyunja27/triple_FrontEnd_2022/commit/f701eb84d2927bd0395329aa2a2e3be9a7c1ab70"> querySelector를 이용하여 window DOM을 선택하는 방식으로 <a/>으로 2초 내에 동시에 끝나는 카운터를 구현하였지만, 문제가 있다고 판단했어요.
   - 상기 구현방식은 재사용성에 문제가 있고, 더불어 React를 사용한 작업방식을 선택하고 싶었기에, React Hook을 통한 state 관리 & 렌더링 방법으로 변경했어요. 
   
   3. static section에서의 재사용성에 대해 고민했습니다.
