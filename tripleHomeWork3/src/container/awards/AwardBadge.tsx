@@ -2,12 +2,12 @@ import badgeApple4x from '../../img/badge-apple4x.png'
 import playStore2x from '../../img/play-store2x.png'
 import { styled } from '../../theme/theme'
 
-const BadgeContainer = styled('div', {
+const BadgeContainer = styled('section', {
   marginLeft: '55%',
   display: 'flex',
 })
 
-const BadgeItem = styled('div', {
+const BadgeItem = styled('section', {
   minWidth: '230px',
   textAlign: 'start',
   alignItems: 'center',
