@@ -1,7 +1,6 @@
 import profile from '../../img/profile.png'
 import bg from '../../img/img-01-bg.png'
 import { styled, leftFadeIn } from '../../theme/theme'
-// import { styled } from '../theme/theme'
 
 const ResumeZone = styled('article', {
   height: '88vh',
@@ -43,7 +42,7 @@ const WeightText = styled('span', {
   fontWeight: 'bold',
 })
 
-export default function Image() {
+export default function BonusImage() {
   return (
     <ResumeZone id="mainImageZone">
       <BackgroundImage id="backGroundImage" src={bg} alt="triple Logo" />
@@ -51,10 +50,15 @@ export default function Image() {
       <TextContainer id="introduceText" css={{ top: '35vh', left: '50vw' }}>
         <MyImageText>
           <br />
-          <WeightText>코딩 맥주는 딱 한캔만 마신답니다.</WeightText>
+          <WeightText>안녕하세요! 박성현입니다.</WeightText>
+        </MyImageText>
+      </TextContainer>
+      <TextContainer id="introduceText" css={{ top: '50vh', left: '50vw' }}>
+        <MyImageText>
+          <br />
+          <WeightText>열심히 성장하는 주니어입니다 :)</WeightText>
         </MyImageText>
       </TextContainer>
     </ResumeZone>
-    // <ResumeZone />
   )
 }

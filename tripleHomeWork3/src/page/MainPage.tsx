@@ -1,10 +1,10 @@
 import MarketingInfo from '../container/MarketingInfo'
-// import MainImage from '../container/BonusImage'
+// import BonusImage from '../container/bonus/BonusImage'
 
 export default function MainPage() {
   return (
     <section>
-      {/* <MainImage /> */}
+      {/* <BonusImage /> */}
       <MarketingInfo />
     </section>
   )
